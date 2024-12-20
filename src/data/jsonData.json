@@ -1,0 +1,142 @@
+{
+  "diagrams": [
+    {
+      "id": 1,
+      "name": "Diagram 1",
+
+      "nodes": [
+        {
+          "id": "0",
+          "type": "addNode",
+          "data": { "label": "Add new Node" },
+          "position": { "x": 0, "y": -200 }
+        },
+        {
+          "id": "1",
+          "type": "question",
+          "data": { "label": "Should I resign" },
+          "position": { "x": 0, "y": -100 }
+        },
+        {
+          "id": "2",
+          "type": "sub question",
+          "data": { "label": "why do you want to resign" },
+          "position": { "x": 0, "y": 0 }
+        },
+        {
+          "id": "3",
+          "type": "result",
+          "data": { "label": "Don't like it" },
+          "position": { "x": 100, "y": 75 }
+        },
+        {
+          "id": "4",
+          "type": "result",
+          "data": { "label": "Salary is low" },
+          "position": { "x": -100, "y": 75 }
+        },
+        {
+          "id": "5",
+          "type": "sub question",
+          "data": { "label": "have a new offer?" },
+          "position": { "x": 150, "y": 150 }
+        },
+        {
+          "id": "6",
+          "type": "result",
+          "data": { "label": "yes" },
+          "position": { "x": 250, "y": 250 }
+        },
+        {
+          "id": "7",
+          "type": "result",
+          "data": { "label": "no" },
+          "position": { "x": 50, "y": 250 }
+        },
+        {
+          "id": "8",
+          "type": "sub question",
+          "data": { "label": "Like it" },
+          "position": { "x": 300, "y": 350 }
+        },
+        {
+          "id": "9",
+          "type": "result",
+          "data": { "label": "Resign" },
+          "position": { "x": 400, "y": 450 }
+        },
+        {
+          "id": "10",
+          "type": "result",
+          "data": { "label": "talk to your Boss" },
+          "position": { "x": -100, "y": 150 }
+        }
+      ],
+      "edges": [
+        {
+          "id": "1-2",
+          "source": "1",
+          "target": "2",
+          "animated": true,
+          "type": "customEdge"
+        },
+        {
+          "id": "2-3",
+          "source": "2",
+          "target": "3",
+          "animated": true,
+          "type": "customEdge"
+        },
+        {
+          "id": "2-4",
+          "source": "2",
+          "target": "4",
+          "animated": true,
+          "type": "customEdge"
+        },
+        {
+          "id": "3-5",
+          "source": "3",
+          "target": "5",
+          "animated": true,
+          "type": "customEdge"
+        },
+        {
+          "id": "5-6",
+          "source": "5",
+          "target": "6",
+          "animated": true,
+          "type": "customEdge"
+        },
+        {
+          "id": "5-7",
+          "source": "5",
+          "target": "7",
+          "animated": true,
+          "type": "customEdge"
+        },
+        {
+          "id": "6-8",
+          "source": "6",
+          "target": "8",
+          "animated": true,
+          "type": "customEdge"
+        },
+        {
+          "id": "8-9",
+          "source": "8",
+          "target": "9",
+          "animated": true,
+          "type": "customEdge"
+        },
+        {
+          "id": "4-10",
+          "source": "4",
+          "target": "10",
+          "animated": true,
+          "type": "customEdge"
+        }
+      ]
+    }
+  ]
+}
